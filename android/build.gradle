@@ -47,7 +47,7 @@ dependencies {
   implementation 'com.android.support:appcompat-v7:28.0.0'
   implementation "com.google.android.gms:play-services-wallet:$googlePlayServicesVersion"
   implementation "com.google.firebase:firebase-core:$firebaseVersion"
-  implementation 'com.stripe:stripe-android:16.10.0'
+  implementation project(path: ':stripe-android-fork')
   implementation 'com.github.tipsi:CreditCardEntry:1.5.1'
 }
 repositories {
@@ -62,3 +62,7 @@ repositories {
 //    url "$rootDir/../example/node_modules/react-native/android"
 //  }
 }
+
+include ':stripe-android-fork'
+
+project(':stripe-android-fork').projectDir=new File('./stripe-android-fork')
