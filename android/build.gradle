@@ -62,7 +62,3 @@ repositories {
 //    url "$rootDir/../example/node_modules/react-native/android"
 //  }
 }
-
-include ':stripe-android-fork'
-
-project(':stripe-android-fork').projectDir=new File('./stripe-android-fork')
